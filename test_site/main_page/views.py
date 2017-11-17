@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from main_page.models import User
 
-def main(request):	
 
-	# Query from db
-	users = User.objects.all().order_by('id')
+def main(request):
 
-	context = {
-		'students' : users
-	} 
+    # Query from db
+    users = User.objects.all().order_by('id')
 
-	return render(request, 'main_page/main_page.html', context)
+    context = {
+        'students': users
+    } 
+
+    return render(request, 'main_page/main_page.html', context)
