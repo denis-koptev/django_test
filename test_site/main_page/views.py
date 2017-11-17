@@ -9,6 +9,6 @@ def main(request):
 
     context = {
         'students': users
-    } 
+    }
 
     return render(request, 'main_page/main_page.html', context)
