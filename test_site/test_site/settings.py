@@ -133,4 +133,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.normcase(os.path.join(BASE_DIR, "main_page/static")),       # untrusted definition
+    os.path.normcase(os.path.join(BASE_DIR, "static")),   
 )
