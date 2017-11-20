@@ -49,7 +49,6 @@ JENKINS_TASKS = ('django_jenkins.tasks.run_pylint',
 
 PROJECT_APPS = [
     'main_page',
-    'test_site'
 ]
 
 MIDDLEWARE = [
